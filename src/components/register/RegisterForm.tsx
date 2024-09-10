@@ -63,7 +63,7 @@ const Register: React.FC = () => {
             console.log("User registered successfully!")
             console.log(user)
             setUser(initialState)
-            
+                
         } catch (error) {
             console.error("Error:", error)
             setError("Error al registrar usuario")
