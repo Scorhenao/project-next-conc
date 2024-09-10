@@ -18,7 +18,8 @@ export const Container = styled.section<StyledContainerProps>`
 export const ContainerForm = styled.div<{width?: string, height?: string}>`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 1rem;
     width: 50%;
     padding: 6rem;
     background-color: ${colors.secondary};
@@ -71,6 +72,17 @@ export const FormContent = styled.form<{$bg?: string, color?: string}>`
         &:hover {
             color: ${colors.primary};
         }
+    }
+`
+
+export const GroupTitle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ${colors.white};
+
+    h1 {
+        padding: 0;
     }
 `
 
